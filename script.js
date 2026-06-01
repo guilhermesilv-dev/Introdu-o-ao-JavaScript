@@ -67,13 +67,22 @@ function alterarCor(novaCor, novaCor2) {
 alterarCor('red', 'blue');
 
 
-let valorContador = 0;
+let Contador = 0;
 
 function incrementar() {
-  valorContador++; 
-  const display = document.querySelector('h2');
-  display.innerText = valorContador;
-}
+  Contador = Contador + 1; 
+  const display = document.querySelector('span');
+  display.innerText = Contador;
+} 
+
+function subtrair() {
+    Contador = Contador - 1;
+    const display = document.querySelector('span');
+    display.innerText = Contador; 
+} 
+
+
+
 
 
 
